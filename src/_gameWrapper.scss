@@ -10,7 +10,13 @@
 
     .pic-container{
         height: 80%;
-        width: auto;
+        width: 100;
+        @include flex(center, center, row);
+
+        .pic-preview{
+            height: auto;
+            width: 80%;
+        }
     }
 
     .nav-wrapper{
