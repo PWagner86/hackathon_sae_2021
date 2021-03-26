@@ -5,8 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find the light</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <script src="./js/main.js" type="module"></script>
 </head>
 <body>
-    
+    <!-- Titlescreen and Gamestart -->
+    <div class="title-screen">
+        <h1 class="main-title">Find the <span>light</span></h1>
+        <button class="decision-btn start-btn">Start Game</button>
+    </div>
+
+    <!-- Overlay over background to make it darker -->
+    <div class="overlay"></div>
+
+    <!-- Restart-Button -->
+    <button class="decision-btn return">Return Home</button>
+
+    <!-- Wrapper with the game -->
+    <div class="game-wrapper">
+        <img class="pic-container" src="./pics/First.png" alt="Bild zur Geschichte">
+        <nav class="nav-wrapper">
+            <button class="decision-btn good"><i class="fas fa-chevron-left"></i> Walk towards forest</button>
+            <p class="story">Choose your next step.</p>
+            <button class="decision-btn bad">Check out abandoned house <i class="fas fa-chevron-right"></i></button>
+        </nav>
+    </div>
 </body>
 </html>

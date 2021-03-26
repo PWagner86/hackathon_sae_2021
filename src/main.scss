@@ -1,0 +1,43 @@
+@use './helper/' as *;
+@use './' as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    @include flex(center, center, column);
+    font-family: $mainFont;
+    background: url('../pics/First.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.decision-btn{
+    min-width: 15rem;
+    padding: 1rem 2rem;
+    @include flex(center, center, row);
+    background: $gray;
+    border: solid $green 3px;
+    border-radius: 3rem;
+    color: $green;
+    font-size: 1.5rem;
+    transition: ease-in-out 0.3s;
+                
+    i{
+        margin: 0 1rem;
+    }
+
+    &:hover{
+        box-shadow: 0 0 10px $glow;
+    }
+}
+
+button{
+    cursor: pointer;
+}
