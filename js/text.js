@@ -7,7 +7,7 @@ export const text = {
         Was machst du?
     `,
     introGoodBtn: "Ich gehe auf ihn zu",
-    introBadBtn: "Ich ignoriere ihn und weiter mache Party",
+    introBadBtn: "Ich ignoriere ihn und mache weiter Party",
 
     // Second
     secondText: `
@@ -28,5 +28,26 @@ export const text = {
     `,
     
     thirdGoodBtn: "Geh zurück zum Bärentyp",
-    thirdBadBtn: "Geh nach Hause"
+    thirdBadBtn: "Geh nach Hause",
+
+    // Fourth
+    fourthText: `
+        Du wachst auf und bist in einer fremden Welt.
+        Es ist so hell, dass es dich blendet.
+        Wohin gehst du?
+    `,
+
+    fourthGoodBtn: "Ich gehe nach links",
+    fourthBadBtn: "Ich gehe nach rechts",
+
+    // Fifth
+    fifthText: `
+        Dein Kopf schmertzt. Dein Körper tut weh.
+        Es ist dunkel und neblig. In der Ferne ent-
+        deckst du eine Hütte.
+    `,
+
+    fifthGoodBtn: "Ich untersuche die Hütte",
+    fifthBadBtn: "Ich rolle mich zusammen und nuckel an meinem Daumen"
+
 }

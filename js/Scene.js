@@ -1,11 +1,11 @@
 export default class Scene{
 
-    constructor(sceneNum, src, goodBtnText, storyText, badBtnText){
+    constructor(sceneNum, src, storyText){
         this.sceneNum = sceneNum;
         this.src = `./pics/${src}`;
-        this.goodBtnText = goodBtnText;
         this.storyText = storyText;
-        this.badBtnText = badBtnText;
+        this.createScene();
+
     }
 
     createScene(){
@@ -25,7 +25,6 @@ export default class Scene{
         const goodBtn = document.createElement("button");
         goodBtn.classList.add("decision-btn");
         goodBtn.classList.add("good");
-        goodBtn.innerHTML = this.goodBtnText;
         nav.append(goodBtn);
         const story = document.createElement("p");
         story.classList.add("story");
@@ -34,10 +33,9 @@ export default class Scene{
         const badBtn = document.createElement("button");
         badBtn.classList.add("decision-btn");
         badBtn.classList.add("bad");
-        badBtn.innerHTML = this.goodBtnText;
         nav.append(badBtn);
         scene.append(nav);
         document.querySelector(".game-wrapper").append(scene);
-    }
+    }   
 }
 
